@@ -1,0 +1,23 @@
+{
+  // Format auto à l’enregistrement
+  "editor.formatOnSave": true,
+
+  // Préférer Prettier comme formateur par défaut
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Appliquer des actions auto utiles à l’enregistrement
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+
+  "eslint.validate": ["javascript", "typescript", "vue"],
+
+  // Activer Prettier sur ces langages (dont .vue)
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[vue]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[markdown]": { "editor.defaultFormatter": "esbenp.prettier-vscode" }
+}
