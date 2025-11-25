@@ -1,8 +1,9 @@
 <template>
-  <AppButton variant="michel" label="Michel" size="lg" :action="action" />
+  <!-- <AppButton variant="michel" label="Michel" size="lg" :action="action" />
   <div class="flex justify-center items-center h-screen">
     <h1 class="text-2xl">Page de test</h1>
-  </div>
+  </div> -->
+  <ColorTest />
 </template>
 
 <script lang="ts" setup>
