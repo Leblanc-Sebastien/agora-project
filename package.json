@@ -14,7 +14,10 @@
     "mobile:android": "npm run mobile:build && npx cap open android",
     "mobile:ios": "npm run mobile:build && npx cap open ios",
     "mobile:add-android": "npx cap add android",
-    "mobile:add-ios": "npx cap add ios"
+    "mobile:add-ios": "npx cap add ios",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@capacitor/android": "^7.4.4",
@@ -41,6 +44,7 @@
     "eslint": "^9.35.0",
     "eslint-plugin-vue": "^10.4.0",
     "happy-dom": "^18.0.1",
+    "vitepress": "^1.6.4",
     "vitest": "^3.2.4",
     "vue-eslint-parser": "^10.2.0"
   }
