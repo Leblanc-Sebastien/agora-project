@@ -10,6 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{vue,ts,js,json,css,md}\"",
+    "format:check": "prettier --check \"**/*.{vue,ts,js,json,css,md}\"",
     "mobile:build": "nuxt generate && npx cap sync",
     "mobile:android": "npm run mobile:build && npx cap open android",
     "mobile:ios": "npm run mobile:build && npx cap open ios",
@@ -44,6 +46,8 @@
     "eslint": "^9.35.0",
     "eslint-plugin-vue": "^10.4.0",
     "happy-dom": "^18.0.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "vitepress": "^1.6.4",
     "vitest": "^3.2.4",
     "vue-eslint-parser": "^10.2.0"
