@@ -1,6 +1,11 @@
 <template>
-  <UButton variant="outline" color="warning" size="xl" @click="test">Salut les Michels</UButton>
+  <UButton :size="size" @click="() => action">{{ label }}</UButton>
 </template>
 <script lang="ts" setup>
-const test = (): void => {}
+defineProps<{
+  variant: string
+  label: string
+  size: 'lg' | 'md' | 'sm' | 'xl' | 'xs'
+  action: () => void
+}>()
 </script>
